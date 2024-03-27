@@ -1,0 +1,26 @@
+[
+  {
+    "empresa": "Exército Brasileiro - 2º Centro de Geoinformação (2º CGEO)",
+    "cargo": "3º Sargento",
+    "periodo": "Mar/2011 - Fev/2019",
+    "descricao": "Como 3º Sargento no Exército Brasileiro, atuei como administrador de servidores em ambiente Linux, sendo responsável pelo gerenciamento e configuração dos servidores DHCP, SAMBA, SQUID, NAGIUS, LDAP, WEBMAIL, SPED e SISBOL. Além disso, liderei a manutenção do site e da intranet da OM, garantindo o pleno funcionamento e atualização dos mesmos. Tive a responsabilidade de realizar a configuração de switches de borda, garantindo a estabilidade e segurança da infraestrutura de rede. Além disso, fui encarregado da manutenção de storages e VMs (máquinas virtuais), assegurando a disponibilidade e desempenho adequados dos sistemas. Desempenhei um papel fundamental na implementação e manutenção de servidores de sistema de segurança, garantindo a proteção dos dados e a integridade das informações. Também fui responsável pela manutenção das máquinas de todo o parque, assegurando o pleno funcionamento dos equipamentos. Além das atividades técnicas, também desempenhei funções administrativas relacionadas à administração pública, como participação em licitações e fiscalização de contratos. Também ministrei instruções de aulas de informática, compartilhando meus conhecimentos e auxiliando no desenvolvimento das habilidades dos colegas."
+  },
+  {
+    "empresa": "Hubtel Telecom",
+    "cargo": "Técnico de Suporte NOC",
+    "periodo": "Out/20 - Ago/21",
+    "descricao": "Como Técnico de Suporte NOC, prestei suporte às equipes de campo e NOC, colaborando ativamente na resolução de problemas e incidentes relacionados à rede. Atendi clientes por telefone e chat, fornecendo suporte técnico e esclarecendo dúvidas relacionadas aos serviços de rede. Também fui responsável pelo gerenciamento e manutenção de redes locais e remotas, incluindo a instalação, configuração e manutenção de computadores e ativos de rede.      Utilizei conhecimentos avançados em redes MikroTik, Switches e Roteadores, VLAN, NAT, CGNAT, BGP, OSPF, bem como experiência em monitoramento utilizando ferramentas como Zabbix e PRTG. Além disso, forneci suporte especializado em conexões Ftth (Fiber to the Home), garantindo a estabilidade e o bom funcionamento das conexões de fibra óptica dos clientes.      Minhas responsabilidades também incluíam o provisionamento e configuração de roteadores Huawei, utilizando meu conhecimento e habilidades para garantir que os roteadores estivessem configurados corretamente e funcionando de forma eficiente.      Durante esse período, desenvolvi habilidades sólidas em suporte de rede, adquiri proficiência em solução de problemas complexos e aprimorei minha capacidade de trabalhar em um ambiente de ritmo acelerado, fornecendo suporte de qualidade aos clientes e equipes internas"
+  },
+  {
+    "empresa": "Stefanini - Tv Globo",
+    "cargo": "Técnico de Suporte N2",
+    "periodo": "Set/21 - Jul/22",
+    "descricao": "Como Técnico de Suporte N2 na Stefanini - Tv Globo, fui responsável por fornecer suporte técnico avançado para usuários ou clientes que enfrentavam problemas mais complexos e que exigiam um conhecimento técnico mais aprofundado. Minhas responsabilidades incluíam a resolução de problemas de hardware, software, rede ou sistemas, investigando e solucionando problemas relatados pelos usuários, identificando a causa raiz e tomando as medidas necessárias para solucioná-los. Também escalava problemas quando necessário. Além disso, atuei na configuração e manutenção de sistemas, redes, estações de trabalho, notebooks, VOIPs e na administração do Active Directory (AD). Durante esse período, gerenciei e monitorei tickets de suporte, garantindo o cumprimento dos acordos de nível de serviço (SLAs). Além disso, estava de prontidão para acompanhar os jornais e agir rapidamente caso ocorressem problemas nos equipamentos."
+  },    
+  {
+    "empresa": "Montreal - Funai",
+    "cargo": "Técnico de Suporte N2",
+    "periodo": "Jul/22",
+    "descricao": "Como Técnico de Suporte N2 na Montreal - Funai, fui responsável por fornecer suporte técnico avançado para usuários ou clientes que enfrentavam problemas mais complexos e que exigiam um conhecimento técnico mais aprofundado. Durante o período, atuei no acompanhamento de reuniões e no gerenciamento de licenças de usuários, garantindo que estivessem devidamente configuradas e atualizadas. Além disso, desempenhei um papel importante no gerenciamento da infraestrutura de rede, assegurando sua estabilidade e eficiência. Também liderei as configurações de tokens de segurança, garantindo que estivessem corretamente configurados e em conformidade com as políticas de segurança estabelecidas. Minhas responsabilidades também incluíam a resolução de problemas de hardware, software, rede ou sistemas, investigando e solucionando problemas relatados pelos usuários, identificando a causa raiz e tomando as medidas necessárias para solucioná-los. Durante esse período, desenvolvi habilidades sólidas em suporte de rede, adquiri proficiência em solução de problemas complexos e aprimorei minha capacidade de trabalhar em um ambiente de ritmo acelerado, fornecendo suporte de qualidade aos clientes e equipes internas."
+  }
+]

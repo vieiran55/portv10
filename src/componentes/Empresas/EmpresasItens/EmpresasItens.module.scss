@@ -1,0 +1,123 @@
+@import "../../../styles/variaveis";
+@import "../../../styles/breakpoints";
+
+.empresasItens {
+  @apply relative flex  justify-center h-full my-7;
+}
+
+.linha__vertical {
+@apply absolute w-1 h-full bg-verdeLoud left-1/2 transform -translate-x-1/2;
+}
+
+.experiencia__list {
+@apply flex flex-col justify-around items-center p-4;
+}
+
+.experiencia__item {
+  @apply flex items-center m-1 my-6 relative;
+}
+
+.circulo {
+  @apply w-[20px] h-[20px] rounded-full bg-verdeLoud cursor-pointer transition duration-300 absolute left-1/2 translate-x-[-50%] z-10 flex flex-col items-center justify-end;
+}
+
+.conteudo {
+  @apply hidden;
+}
+
+.conteudo__vazio {
+  @apply hidden;
+}
+
+.descricao{
+  @apply hidden;
+  @media screen and (min-width: $tablet) {
+    @apply block text-justify;
+  }
+}
+
+.conteudo__esquerda {
+  @apply text-center mr-3 animate-pulse;
+}
+
+.conteudo__direita {
+  @apply text-center ml-3;
+}
+
+.esquerda {
+  @apply w-[330px] justify-start;
+  @media screen and (min-width: $tablet) {
+    @apply w-full;
+  }
+}
+
+.direita {
+  @apply  w-[330px] justify-end;
+  @media screen and (min-width: $tablet) {
+    @apply w-full;
+  }
+}
+
+.ativa .circulo {
+  @apply text-black ;
+}
+
+.notification{
+  @apply h-4 w-4 animate-bounce text-black;
+}
+
+.estrela{
+  @apply h-5 w-5 animate-spinSlow;
+}
+
+.ativa .conteudo {
+  @apply flex flex-col w-1/2 text-center 
+}
+
+.esquerda .teste {
+  @apply flex flex-row w-full;
+}
+
+.ativa .teste {
+  @apply animate-fadeinDown;
+}
+
+.direita .teste {
+  @apply flex flex-row-reverse w-full;
+}
+
+.esquerda .dentro{
+  @apply bg-purple-600 mr-4 p-4 rounded-lg text-white ;
+}
+
+.esquerda .dentro::after{
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid rgb(147 51 234 / var(--tw-bg-opacity));
+  bottom: -20px;
+  top: 50%;
+  right: 50%;
+  @apply rotate-[270deg] w-0;
+}
+
+.direita .dentro{
+  @apply bg-purple-600 ml-4 p-4 rounded-lg text-white ;
+}
+
+.direita .dentro::after{
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid rgb(147 51 234 / var(--tw-bg-opacity));
+  bottom: -20px;
+  top: 50%;
+  left: 50%;
+  @apply rotate-90;
+}

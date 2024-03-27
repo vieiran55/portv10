@@ -1,0 +1,49 @@
+@import "../../styles/variaveis";
+@import "../../styles/breakpoints";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+
+.conteiner{
+  @apply w-full my-7;
+}
+.conteiner2{
+  @apply w-11/12 my-7 animate-fadeinDownSlow flex flex-row justify-center;
+}
+
+.skills{
+  @apply flex flex-row flex-wrap items-center justify-center my-7;
+  @media screen and (min-width: $tablet) {
+    @apply w-11/12;
+  }
+  @media screen and (min-width: $desktop_xl) {
+    @apply w-11/12;
+  }
+  &__icons{
+    @apply h-10 w-10 m-2;
+    @media screen and (min-width: $tablet) {
+      @apply h-14 w-14 ;
+    }
+    @media screen and (min-width: $desktop_xl) {
+      @apply h-20 w-20 ;
+    }
+  }
+  &__titulosConteiner{
+    @apply w-full;
+  }
+  &__titulos{
+    @apply flex flex-row mb-2;
+  }
+  &__titulo{
+    @apply text-verdeLoud text-lg font-bold;
+    @media screen and (min-width: $desktop_xl) {
+      @apply text-3xl;
+    }
+  }
+  &__titulo2{
+    @apply text-white text-lg mx-1 flex flex-row items-start;
+    @media screen and (min-width: $desktop_xl) {
+      @apply text-3xl;
+    }
+  }
+}

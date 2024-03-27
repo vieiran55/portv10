@@ -1,0 +1,70 @@
+@import "../../styles/variaveis";
+@import "../../styles/breakpoints";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+
+.empresas{
+  @apply flex flex-col w-11/12 my-7;
+  &__titulos{
+    @apply flex flex-row mb-2;
+  }
+  &__titulo{
+    @apply text-verdeLoud text-lg font-bold;
+    @media screen and (min-width: $desktop_xl) {
+      @apply text-3xl;
+    }
+  }
+  &__titulo2{
+    @apply text-white text-lg mx-1;
+    @media screen and (min-width: $desktop_xl) {
+      @apply text-3xl;
+    }
+  }
+}
+
+
+.trilha-vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.experiencia {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.circulo {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #007bff; /* Cor de fundo do círculo */
+  margin-right: 16px;
+}
+
+.conteudo {
+  color: #333;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+p {
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.empresas2{
+  @apply flex flex-col w-11/12 my-7 animate-fadeinDownSlow justify-center;
+}
+
+.empresas__conteiner{
+  @apply h-full;
+  @media screen and (min-width: $desktop_xl) {
+    @apply h-full;
+  }
+}

@@ -1,0 +1,79 @@
+@import "../../styles/variaveis";
+@import "../../styles/breakpoints";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+
+.sobre{
+  @apply flex flex-col w-full items-center my-7;
+  @media screen and (min-width: $tablet) {
+    @apply justify-around;
+  }
+  @media screen and (min-width: $desktop_xl) {
+    @apply mr-8;
+  }
+  &__infos{
+    @apply w-11/12;
+    &__titulos{
+      @apply flex flex-row mb-2;
+    }
+    &__titulo{
+      @apply text-verdeLoud text-lg font-bold;
+      @media screen and (min-width: $desktop_xl) {
+        @apply text-3xl;
+      }
+    }
+    &__titulo2{
+      @apply text-white text-lg mx-1;
+      @media screen and (min-width: $desktop_xl) {
+        @apply text-3xl;
+      }
+    }
+    &__texto{
+      @apply text-justify text-sm my-2;
+      @media screen and (min-width: $tablet) {
+        @apply text-base;
+      }
+      @media screen and (min-width: $desktop_xl) {
+        @apply text-xl my-4;
+      }
+    }
+  }
+  &__cards{
+    @apply flex flex-col w-11/12 my-6;
+    @media screen and (min-width: $tablet) {
+      @apply w-5/12;
+    }
+    @media screen and (min-width: $desktop_xl) {
+      @apply items-center;
+    }
+    &__conteiner{
+      font-family: "Michroma", sans-serif;
+      @apply flex flex-row bg-[#4F4F4F] my-2 h-24 justify-around items-center rounded-md;
+      @media screen and (min-width: $tablet) {
+        @apply h-20;
+      }
+      @media screen and (min-width: $desktop_xl) {
+        @apply w-96;
+      }
+    }
+    &__titulo{
+      @apply text-xs my-4 font-bold;
+    }
+    &__link{
+      @apply text-xs mx-2 text-verdeLoud underline decoration-1 cursor-pointer;
+    }
+    &__simbol{
+      @apply text-2xl text-verdeLoud;
+    }
+  }
+}
+
+.sobre2{
+  @apply flex flex-col w-full items-center my-7 animate-fadeinDown;
+  @media screen and (min-width: $tablet) {
+    @apply justify-around;
+  }
+  @media screen and (min-width: $desktop_xl) {
+  }
+}

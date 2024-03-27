@@ -1,0 +1,442 @@
+@import "../../styles/variaveis";
+@import "../../styles/breakpoints";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+
+
+@media screen and (max-width: 2000px) {
+  /* Defina um valor adequado para o tamanho máximo */
+  .projetos {
+    /* Adicione as propriedades necessárias para ajustar o layout */
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+}
+
+
+.projetos{
+  @apply flex flex-col w-11/12 my-7;
+  &__titulos{
+    @apply flex flex-row mb-2;
+  }
+  &__titulo{
+    @apply text-verdeLoud text-lg font-bold;
+    @media screen and (min-width: $desktop_xl) {
+      @apply text-3xl;
+    }
+  }
+  &__titulo2{
+    @apply text-white text-lg mx-1;
+    @media screen and (min-width: $desktop_xl) {
+      @apply text-3xl;
+    }
+  }
+  &__item{
+    @apply flex h-[70vw] flex-col bg-green-700 border-2 border-blue-100 rounded-md cursor-pointer my-4;
+    &:hover{
+      @apply border-verdeLoud;
+    }
+    &__imagem{
+      @apply h-full w-80;
+    }
+    &__elementos__conteiner{
+        @apply hidden;
+    }
+    &__elementos__conteinerPrincipal{
+      @apply rounded-t-lg py-1 flex flex-col items-center animate-fadeinDown;
+    }
+    &__titulo{
+      font-family: "Michroma", sans-serif;
+      text-shadow: 4px 2px 6px #2B130C;
+      @apply z-20 px-2 text-xs text-verdeLoud font-bold ;
+      @media screen and (min-width: 800px) {
+        @apply text-4xl py-2;
+      }
+    }
+    &__tag{
+      @apply flex flex-row text-center self-end;
+      @media screen and (min-width: 800px) {
+        @apply hidden;
+      }
+      &__icon{
+        @apply w-6 h-4  ;
+        @media screen and (min-width: 800px) {
+          @apply w-9 h-6;
+        }
+      }
+      &__iconPrincipal{
+        @apply mx-2 w-12 h-7  ;
+      }
+    }
+    &__tagDesktop{
+      @apply flex flex-row text-center self-end;
+      @media screen and (max-width: 800px) {
+        @apply hidden;
+      }
+      &__icon{
+          @apply w-9 h-6;
+        }
+      &__iconPrincipal{
+        @apply mx-2 w-12 h-7  ;
+      }
+    }
+  }
+}
+
+.projetos__links__conteiner{
+  @apply rounded-b-lg py-1 flex flex-row animate-fadeInUp justify-end;
+  @media screen and (min-width: 800px) {
+    @apply hidden;
+  }
+}
+
+.projetos__links__itemConteiner{
+  @apply flex flex-row;
+}
+
+.projetos__links__item{
+  @apply mx-1 flex flex-row justify-center items-center border-2 rounded-md border-verdeLoud  h-8 w-24 text-verdeLoud bg-black;
+  &:hover{
+    @apply border-2 border-verdeLoud rounded-md cursor-pointer w-24 text-verdeLoud bg-black transition delay-150 ease-in;
+  }
+  @media screen and (min-width: 800px) {
+    @apply justify-evenly h-10 w-24;
+  }
+  &__icon{
+    @apply h-6 w-6 mr-1 text-verdeLoud;
+  }
+}
+
+
+.principal:hover .projetos__links__conteiner{
+  @media screen and (min-width: 801px) {
+    @apply flex flex-row justify-between;
+  }
+}
+
+
+.conteiner{
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 0 20px; /* Ajuste a quantidade de padding conforme necessário */
+  pointer-events: all;
+  @apply  max-w-[1300px] h-full w-full m-auto py-16 px-4 relative flex flex-col items-center;
+  @media screen and (min-width: 670px) {
+    pointer-events: all;
+    &:hover .botaoLeft{
+      @apply block;
+    }
+    &:hover .botaoRight{
+      @apply block;
+    }
+  }
+  }
+
+.conteinerFotos{
+  scroll-snap-type: x mandatory;
+  @apply flex flex-row relative w-[90vw] items-center;
+  @media screen and (min-width: 2000px) {
+    @apply w-[375px] h-[420px] w-full;
+  } 
+}
+
+.image{
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  @apply w-[300px] h-[250px] rounded-2xl bg-center bg-cover duration-500 flex flex-col-reverse border-2 mx-1 animate-fadeinDown;
+  @media screen and (min-width: 670px) {
+    @apply h-[330px] flex;
+  }
+  @media screen and (min-width: 950px) {
+    @apply h-[430px] flex;
+  }
+  @media screen and (min-width: 1050px) {
+    @apply w-[550px] h-[410px] flex;
+  }
+  @media screen and (min-width: 2000px) {
+    @apply w-[375px] h-[350px] flex;
+  } 
+}
+
+.imageLeft{
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  @apply w-[300px] h-[250px] rounded-2xl bg-center bg-cover duration-500 flex flex-col-reverse border-2 mx-1 animate-fadeInLeft;
+  @media screen and (min-width: 670px) {
+    @apply h-[330px] flex;
+  }
+  @media screen and (min-width: 950px) {
+    @apply h-[430px] flex;
+  }
+  @media screen and (min-width: 1050px) {
+    @apply w-[550px] h-[410px] flex;
+  }
+  @media screen and (min-width: 2000px) {
+    @apply w-[375px] h-[350px] flex;
+  } 
+}
+
+
+.primeiro{
+  @apply -ml-72;
+  @media screen and (min-width: 470px) {
+    @apply -ml-60;
+  }
+  @media screen and (min-width: 500px) {
+    @apply -ml-52;
+  }
+  @media screen and (min-width: 670px) {
+    @apply -ml-60;
+  }
+  @media screen and (min-width: 700px) {
+    @apply -ml-56;
+  }
+  @media screen and (min-width: 800px) {
+    @apply -ml-56;
+  }
+  @media screen and (min-width: 1000px) {
+    @apply -ml-60;
+  }
+  @media screen and (min-width: 1050px) {
+    @apply -ml-[30rem] bg-black;
+  }
+  @media screen and (min-width: 1200px) {
+    @apply -ml-96;
+  }
+  @media screen and (min-width: 1300px) {
+    @apply -ml-[23rem] bg-black;
+  }
+  @media screen and (min-width: 1400px) {
+    @apply -ml-[20rem] bg-black;
+  }
+  @media screen and (min-width: 1600px) {
+    @apply -ml-[15rem] bg-black;
+  }
+  @media screen and (min-width: 1700px) {
+    @apply -ml-[13rem] bg-black;
+  }
+  @media screen and (min-width: 1800px) {
+    @apply -ml-[9rem] bg-black;
+  }
+  @media screen and (min-width: 1900px) {
+    @apply -ml-[6rem] bg-black;
+  }
+  @media screen and (min-width: 2000px) {
+    @apply -ml-[0] bg-black;
+  }
+}
+
+.principal{
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  @apply w-[300px] h-[270px] rounded-2xl bg-center bg-cover duration-500 flex flex-col justify-between border-2 border-verdeLoud ;
+  @apply transition-all;
+  @media screen and (min-width: 410px) {
+    @apply w-[350px] h-[290px] justify-between;
+  }
+  @media screen and (min-width: 670px) {
+    @apply w-[470px] h-[380px] justify-between;
+  }
+  @media screen and (min-width: 700px) {
+    @apply w-[550px] h-[410px] justify-between;
+  }
+  @media screen and (min-width: 850px) {
+    @apply border-white w-[600px] h-[410px] justify-between;
+    &:hover{
+      @apply border-verdeLoud justify-between;
+    }
+  }
+  @media screen and (min-width: 950px) {
+    @apply w-[720px] h-[510px] justify-between;
+  }
+  @media screen and (min-width: 1050px) {
+    @apply w-[800px] h-[550px] justify-between;
+  }
+  @media screen and (min-width: 1600px) {
+    @apply w-[840px] h-[600px] justify-between;
+  }
+  @media screen and (min-width: 2000px) {
+    @apply w-[510px] h-[410px] justify-between;
+  }
+}
+
+// .botaoLeft{
+//   @apply hidden  absolute top-[50%] -translate-x-0 translate-y-[50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer;
+// }
+
+.botaoLeft{
+  pointer-events: all;
+  @apply block absolute top-[40%] -translate-x-0 translate-y-[40%] left-5 text-2xl rounded-full p-2 bg-verdeLoud/70 text-black cursor-pointer;
+  @media screen and (min-width: $tablet) {
+    @apply hidden;
+  }
+}
+
+.botaoRight{
+  pointer-events: all;
+  @apply block bg-verdeLoud/70 absolute top-[40%] -translate-x-0 translate-y-[40%] right-2 text-2xl rounded-full p-2 text-black cursor-pointer;
+  @media screen and (min-width: $tablet) {
+    @apply hidden;
+  }
+}
+
+.pontos{
+  pointer-events: all;
+  @apply flex top-4 justify-center py-2 text-2xl cursor-pointer;
+  &__icons{
+    @apply text-verdeLoud fill-green-700 animate-fadeInLeft ;
+  }
+  &__moon{
+    @apply  animate-balanco text-xl;
+  }
+}
+
+.react {
+  background-image: url("../../images/skills/react.svg");
+  @apply bg-no-repeat cursor-pointer bg-contain bg-center animate-spinSlow; 
+}
+
+.js {
+    background-image: url("../../images/skills/javascript.svg");
+  @apply bg-no-repeat cursor-pointer bg-contain bg-center;
+    &:hover{
+    @apply animate-flip;
+  }
+}
+
+.ts {
+    background-image: url("../../images/skills/typescript.svg");
+  @apply bg-no-repeat cursor-pointer bg-contain bg-center;
+    &:hover{
+    @apply animate-flip;
+  }
+} 
+
+.html {
+    background-image: url("../../images/skills/html5.svg");
+  @apply bg-no-repeat cursor-pointer bg-contain bg-center;
+    &:hover{
+    @apply animate-flip;
+  }
+}
+
+.css {
+    background-image: url("../../images/skills/css3.svg");
+  @apply bg-no-repeat cursor-pointer bg-contain bg-center;
+    &:hover{
+    @apply animate-flip;
+  }
+}
+
+.node{
+    background-image: url("../../images/skills/nodejs.svg");
+  @apply bg-no-repeat cursor-pointer bg-contain bg-center;
+    &:hover{
+    @apply animate-flip;
+  } 
+}
+
+.sass{
+    background-image: url("../../images/skills/sass.svg");
+  @apply bg-no-repeat cursor-pointer bg-contain bg-center;
+    &:hover{
+    @apply animate-flip;
+  }
+}
+
+.tailwind{
+    background-image: url("../../images/skills/tailwindcss.svg");
+  @apply bg-no-repeat cursor-pointer bg-contain bg-center;
+    &:hover{
+    @apply animate-flip;
+  } 
+}
+
+.mongodb{
+    background-image: url("../../images/skills/mongodb.svg");
+  @apply bg-no-repeat cursor-pointer bg-contain bg-center;
+    &:hover{
+    @apply animate-flip;
+  }  
+}
+
+.mysql{
+    background-image: url("../../images/skills/mysql.svg");
+  @apply bg-no-repeat cursor-pointer bg-contain bg-center;
+  &:hover{
+    @apply animate-flip;
+  } 
+}
+
+.python{
+    background-image: url("../../images/skills/python.svg");
+  @apply bg-no-repeat cursor-pointer bg-contain bg-center;
+  &:hover{
+    @apply animate-flip;
+  }
+}
+
+.loading::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px
+}
+
+.anima{
+  @apply animate-pulse;
+}
+
+
+.projetos2{
+  @apply flex flex-col w-11/12 my-7 animate-fadeinDownSlow;
+  @media screen and (max-width: 2000px) {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+}
+
+.imageLateral{
+  @apply h-full rounded-xl;
+}
+
+.imagePrincipal{
+  @apply h-full rounded-xl;
+}
+
+.imagePrincipal2{
+  @apply h-full rounded-xl;
+}
+
+.imagePrincipal,
+.imagePrincipal2 {
+  transition: opacity 1s ease;
+  opacity: 1;
+  @apply animate-fadeInDownFull;
+}
+
+.imagePrincipal2 {
+  display: none;
+  opacity: 0;
+}
+
+.imageContainer:hover .imagePrincipal {
+  display: none;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.imageContainer:hover .imagePrincipal2 {
+  display: block;
+  opacity: 1;
+  transition: opacity 1s ease; 
+}
